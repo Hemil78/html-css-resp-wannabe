@@ -71,3 +71,53 @@ img {
 .clear {
   clear: both;
 }
+
+/* media query da 1024 a 768*/
+
+@media screen and (max-width: 1024px){
+  .row{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #lezioni .row>.left{ 
+    display: block;
+    width: 100vh;
+  }
+  h1{
+    font-size: 40px;
+  }
+
+body > div{
+  margin: 30px 0;
+}
+#lezioni .row>.right{
+  margin-top: 30px;
+}
+.central,
+.right{
+  margin-top: 30px;
+}
+}
+
+/* media query da 767 a 0 */
+
+@media screen and (max-width: 420px){
+  body{
+    width: 100%;
+  }
+  .row{
+    width: 100%;
+    text-align: center;
+  }
+  h3{
+    padding: 0 20px;
+  }
+
+  .left{
+    padding: 0 20px;
+  }
+}
+
+
